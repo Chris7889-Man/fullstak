@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh From HTML </title>
+</head>
+<body>
+    <h2> Form Pendaftaran </h2>
+    <form action="/submit-form" method ="POST">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" nama="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label> Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="famale" name="gender" value="famale">
+        <label for="male">Perempuan</label><br><br>
+
+        <label for="hobby">Hoby:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby" value="membaca">
+        <label for="hobby1">Membaca</label><br>
+        <input type="checkbox" id="hobby2" name="hobby" value="Menulis">
+        <label for="hobby2">Menulis</label><br><br>
+
+
+        <input type="submit" value="Kirim">
+    
+   
+    </form>
+    
+</body>
+</html>

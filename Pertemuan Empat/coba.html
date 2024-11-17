@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Percobaan </title>
+</head>
+<body>
+
+    <h3> Umur saya : <span id="umur">10</span></h3>
+    <h3> hasil : <span id="seleksi"> ...</span></h3>
+
+  <script>
+  
+       
+    let umur = document.getElementById('umur')
+    let seleksi = document.getElementById('seleksi') 
+       
+
+
+if (umur.innerHTML >= 80 ) {
+    seleksi.innerHTML = 'Lansia'
+}
+else if (umur.innerHTML < 80 && umur.innerHTML >= 40) {
+    seleksi.innerHTML = 'orang tua'
+}
+else if (umur.innerHTML < 40 && umur.innerHTML >= 20 ) {
+     seleksi.innerHTML = 'Anak Muda' 
+    }
+else  {
+    seleksi.innerHTML = 'Anak - anak'
+}
+
+</script>  
+</body>
+</html>
+

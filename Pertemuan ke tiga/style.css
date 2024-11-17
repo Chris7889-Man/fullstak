@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-content: row; */
+    height: 1000px;
+    /* flex-direction: column; */
+    background-color: gray;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    font-size: 32px;
+    color: #fff;
+    margin: 5px;
+}
+
+.kotak1 {
+    background-color: red;
+}
+.kotak2 {
+    background-color: blue;
+}
+.kotak3 {
+    background-color: yellow;
+}
+.kotak4 {
+    background-color: orange;
+}

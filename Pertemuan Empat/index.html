@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Petemuan 4 - Javaskrip</title>
+</head>
+<body>
+  
+    <h1 id="tes"> texs berubah </h1>
+    <h1 id="tes1"> texs kedua </h1>
+
+    <h2> Nilai Dibawah :</h2>
+
+    <h2 id="nilai"> 30 </h2>
+
+    <h2 id="nilai"> hasil :</h2>
+
+    <h3> Umur saya : <span id="umur"> 50</span></h3>
+    <h3> hasil : <span id="seleksi"> ...</span></h3>
+      <script>
+        // variable dan constanta
+        let x = 10
+        let y = 20
+        // document.write(x)
+        // document.write(y)
+        // document.write("<br>")
+        x = y
+        y = x
+
+        // document.write("Ini text dari Javaskrip")
+        // document.write("<br>")
+        // document.write(x + y)
+
+        // document.write(y)
+
+        document.getElementById('tes').innerHTML = 'Teks berubah'
+
+        document.getElementById('tes').style.color = 'red'
+
+        document.getElementById('tes1').style.color = 'green'
+
+        // percabangan (if, else if, else)
+        // gerbang Logika (AND, OR, NOT)
+        // AND = && - ketika semua kondisi terpenuhi (true)
+        // OR = || - ketika salah satu kondisi terpenuhi
+        // NOT = != - kebalikan dari nilainya 
+
+        let nilai = document.getElementById('nilai')
+        let hasil = document.getElementById('hasil')
+        let angka = nilai.innerHTML
+
+        angka = 20
+        nilai.innerHTML = 30
+        // nilai.innerHTML == 100 + 200 
+
+        if (nilai.innerHTML == 20)  {
+            nilai.style.color = 'blue'
+            // nilai.style.fontSize = '100px'
+            hasil.innerHTML = 'angka di atas nilainya sama'
+          }
+        else if (nilai.innerHTML == 30) {
+            nilai.style.color = 'green'
+            hasil.innerHTML = 'angka di atas nilainya sama'
+        }
+        
+        else {
+            nilai.style.color = 'red'
+            hasil.innerHTML = 'angka di atas nilainya tidak sama'
+        }
+
+
+      </script>
+
+
+</body>
+</html>
